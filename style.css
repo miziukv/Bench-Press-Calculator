@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff5733;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.input-section label {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-section input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.workout-section {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.workout-section h2 {
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px soid #ddd;
+    border-radius: 5px;
+}
+
+.set p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions span {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.actions button {
+    padding: 8px 12px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #e14a1c;
+}
+
+#maxout {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
