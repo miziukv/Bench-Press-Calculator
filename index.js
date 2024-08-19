@@ -117,3 +117,21 @@ function calculatePlates(weight) {
 function roundToNearest5(num) {
     return Math.round(num / 5) * 5;
 }
+
+function toggleWorkout(workoutId) {
+    const workoutContent = document.getElementById(workoutId);
+    if (workoutContent) {
+        workoutContent.classList.toggle('hidden');
+    } else {
+        console.error(`No element found with ID: ${workoutId}`);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.toggle-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const workoutId = this.getAttribute('data-workout-id');
+            toggleWorkout(workoutId);
+        });
+    });
+});
