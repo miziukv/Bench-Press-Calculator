@@ -87,7 +87,7 @@ function updateWorkoutSet(weightId, weightValue, plateSectionId) {
         plateRow.className = 'plate-row';
 
         if (plate.count > 1) {
-            plateRow.innerHTML = `${plate.weight} <span style="font-weight: normal;">lb</span> x ${plate.count}`;
+            plateRow.innerHTML = `${plate.weight} x ${plate.count} <span style="font-weight: normal;">lb</span>`;
         } else {
             plateRow.innerHTML = `${plate.weight} <span style="font-weight: normal;">lb</span>`;
         }
@@ -118,6 +118,27 @@ function roundToNearest5(num) {
     return Math.round(num / 5) * 5;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Open the first workout
+    const firstWorkout = document.getElementById('workout1');
+    if (firstWorkout) {
+        firstWorkout.classList.remove('hidden');
+    }
+
+    // Close other workouts
+    const otherWorkouts = document.querySelectorAll('.workout-content:not(#workout1)');
+    otherWorkouts.forEach(workout => {
+        workout.classList.add('hidden');
+    });
+});
+
+document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const workoutId = this.getAttribute('data-workout-id');
+        toggleWorkout(workoutId);
+    });
+});
+
 function toggleWorkout(workoutId) {
     const workoutContent = document.getElementById(workoutId);
     if (workoutContent) {
@@ -126,12 +147,3 @@ function toggleWorkout(workoutId) {
         console.error(`No element found with ID: ${workoutId}`);
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.toggle-button').forEach(button => {
-        button.addEventListener('click', function() {
-            const workoutId = this.getAttribute('data-workout-id');
-            toggleWorkout(workoutId);
-        });
-    });
-});
