@@ -155,6 +155,22 @@ button.calculate-button:hover {
     background-color: #c23e16;
 }
 
+.plates-section {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.plate-row {
+    padding: 5px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
 #maxout {
     text-align: center;
     margin-top: 20px;
