@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
@@ -22,6 +22,13 @@ h2 {
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 1.3em;
+    color: #ff5733;
+    margin-top: 0;
+    text-align: center;
+}
+
 .input-section {
     text-align: center;
     margin-right: 10px;
@@ -41,9 +48,24 @@ h2 {
     text-align: center;
 }
 
+.submit-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submit-button:hover {
+    background-color: #c23e16;
+}
+
 .workout-section {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
     margin-top: 20px;
     background-color: #fff;
     padding: 20px;
@@ -57,50 +79,91 @@ h2 {
     margin-bottom: 20px;
 }
 
-.set {
-    display: flex;
-    justify-content: center;
+.table-header, .set {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
     align-items: center;
-    margin-bottom: 15px;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px soid #ddd;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.set p {
-    margin: 0;
-    font-size: 1.1em;
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-}
-
-.actions span {
-    margin-right: 10px;
+.table-header {
+    background-color: #ff5733;
+    color: white;
     font-weight: bold;
-    color: #ff5733;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.actions button {
-    padding: 8px 12px;
+.table-header .header-item {
+    padding: 5px;
+    border-right: 2px solid white; /* Adds white lines between columns */
+}
+
+.table-header .header-item:last-child {
+    border-right: none; /* Removes the border from the last item */
+}
+
+.set {
+    margin-bottom: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.set button.calculate-button {
+    margin: 2px auto; /* Centers the button horizontally within its grid cell */
+    display: block;
+    padding: 8px 25px;
     background-color: #ff5733;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
-.actions button:hover {
-    background-color: #e14a1c;
+.set div {
+    font-size: 1.1em;
+    text-align: center;
+    border-right: 2px solid #ddd; 
+}
+
+.set div:last-child {
+    border-right: none; /* Removes the border from the last column */
+}
+
+.set-weight {
+    font-weight: bold;
+    color: #ff5733;
+}
+
+button.calculate-button {
+    padding: 10px 12px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 100px;
+}
+
+button.calculate-button:hover {
+    background-color: #c23e16;
 }
 
 #maxout {
     text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #353535;
 }
 
-h3 {
-    text-align: center;
+#maxout span {
+    font-weight: bold;
+    color: #ff5733;
 }
+
