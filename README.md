@@ -1,6 +1,8 @@
-# Bench Press Program 💪 designed to increase user's 1RM (One Rep Maximum) 
+# 💪 Bench Press Program designed to increase user's 1RM (One Rep Maximum) 
 
 The following program has seven workouts, each consiting of 5-6 sets with varying weights - calculated using specific percentages. The program provides a simple, straightforward UI, showing sets, repetitions, weights, and plates per side for convinience. Each workout window can be closed and reopened.
+
+## [Link to the Bench Press Program](https://miziukv.github.io/Bench-Press-Calculator/)
 
 **WORKOUT 1** 
 ---------------------------
