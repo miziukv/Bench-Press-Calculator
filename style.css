@@ -187,21 +187,6 @@ h3 {
     border-right: none; 
 }
 
-button.calculate-button {
-    padding: 10px 12px;
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    max-width: 100px;
-}
-
-button.calculate-button:hover {
-    background-color: #c23e16;
-}
-
 .plates-section {
     margin-top: 10px;
     padding: 10px;
@@ -226,5 +211,11 @@ button.calculate-button:hover {
 #maxout span {
     font-weight: bold;
     color: #ff5733;
+}
+
+p {
+    text-align: center;
+    color: rgb(116, 116, 116);
+    font-size: 0.9em;
 }
 
